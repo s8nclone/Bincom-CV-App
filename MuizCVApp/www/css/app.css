@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: creepster;
-    src: url(font/Creepster-Regular.ttf);
+    src: url(../font/Creepster-Regular.ttf);
 }
 
 @font-face {
     font-family: cookies;
-    src: url(font/Cookie-Regular.ttf);
+    src: url(../font/Cookie-Regular.ttf);
 }
 
 .body {
