@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>'Muiz Farayola CV App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
+    <link rel="stylesheet" href="app.css">
+    <style>
+      /* TODO */
+    </style>
+  </head>
+
+  <body class="body">
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title" id="name_title">Abdulmuiz Farayola</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <div>
+            <h2>Profile</h2>
+          </div>
+          <div>
+            <img src="image/myProfile.png" alt="Muiz profile picture" height="250">
+            <p class="profile_p">
+              Courteous and enthusiastic, I am interested in IT and its world in entirety.
+              I am a team-spirited and self-motivated frontend developer with proven and
+              tested designing, development, testing and communication skills.
+              With a passion for both personal growth and technology development,
+              I possess a strong knowledge of the link between theory and practice from
+              well-known research-based institution and a proven ability to collaborate
+              effectively with senior developers to develop responsive web apps while spending more time to be mentored.
+              I am detail oriented and seek to advance my knowledge in technology development
+              and services and ready to apply my passion for programming to a talented team to develop quality solutions.
+            </p>
+          </div>
+        </div>
+        <div class="app-section">
+          <div>
+            <h2>Skills</h2>
+          </div>
+          <div>
+            <ul class="app-list">
+              <label id="label">Frontend</label>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Reactjs</li>
+              <li>Python</li>
+              <label id="label">Backend</label>
+              <li>JavaScript</li>
+              <li>Nodejs</li>
+              <li>Expressjs</li>
+              <li>Django</li>
+              <label id="label">Tools</label>
+              <li>SASS</li>
+              <li>Postman</li>
+              <li>GIT</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+        <div class="app-section">
+          <div>
+            <h2>Contact</h2>
+          </div>
+          <div>
+            <ul class="app-list">
+              <li class="app-button contact_li"><a href="tel:+2349036454103">Call me</a></li>
+              <li class="app-button contact_li"><a href="mailto:farayolajunior20@gmail.com" target="_blank">Email @</a></li>
+              <li class="app-button contact_li"><a href="https://github.com/s8nclone" target="_blank">Github</a></li>
+              <li class="app-button contact_li"><a href="https://twitter.com/middles8n" target="_blank">Twitter</a></li>
+              <li class="app-button contact_li"><a href="https://www.linkedin.com/in/abdulmuiz-farayola-8a8484224/" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="app-button" id="eduExp" data-target="exp_edu">Education & Experience >>></div>
+      </div>
+    </div>
+
+    <div class="app-page" data-page="exp_edu">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title" id="exp_title">Education And Experience</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <div>
+            <h2>Experience</h2>
+          </div>
+          <div>
+            <h3>NYSC Technical Intern</h3>
+            <h4>Federal Ministry of Petroleum Resources, NNPC Tower, Abuja.</h4>
+            <h5>October 2021 - November 2022</h5>
+            <div>
+              <p>I Worked in the ICT department where I was able to solve real-time IT related issues on different levels including;
+                software troubleshooting, software and hardware configurations, networking and cabling,
+                in various departments across the ministry. I also worked with a team of IT professionals to meet team goals
+                and business objectives of the ministry. I worked in a team of web designers, graphic designers and backend developers
+                and supervised interns, provided training and motivated team members.
+                In addition to that, I gained experience in resolving conflicts with colleagues professionally.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3>Technical Intern</h3>
+            <h4>Inlaks Computers Limited, Lagos.</h4>
+            <h5>April 2017 - October 2017</h5>
+            <div>
+              <p>I carried out repairs and maintenance on ATM modules and remotely provided support to site engineer workin in the field.
+              I performed repairs and maintenance of inverters and solar power systems, and also assisted the site engineers with remote support</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-section">
+          <div>
+            <h2>Education</h2>
+          </div>
+          <div>
+            <h3>Ekiti State University, Ado-Ekiti</h3>
+            <h4>2013 - 2021</h4>
+            <h4>Bachelor of Engineering in Computer Engineering</h4>
+          </div>
+          <div>
+            <h3>Sped International Secondary School, Oyo</h3>
+            <h4>2009 - 2012</h4>
+            <h4>West African Secondary School Certificate Examination (WASSCE)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="zepto.js"></script>
+    <script src="app.min.js"></script>
+    <script>
+      App.controller('home', function (page) {
+        // put stuff here
+      });
+
+      App.controller('exp_edu', function (page) {
+        // put stuff here
+      });
+
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('home');
+      }
+    </script>
+  </body>
+</html>
