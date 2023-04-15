@@ -74,7 +74,9 @@
             </ul>
           </div>
         </div>
-        <div class="app-button" id="eduExp" data-target="exp_edu">Education & Experience >>></div>
+        <div>
+          <div class="app-button" id="eduExp" data-target="exp_edu">Education & Experience >>></div>
+        </div>
       </div>
     </div>
 
@@ -128,11 +130,33 @@
             <h4>West African Secondary School Certificate Examination (WASSCE)</h4>
           </div>
         </div>
+        <div class="app-section">
+          <div class="app-section">
+            <h4>Oh! we've met before? Send a Photo and short Note</h4>
+            <div class="app-button" id="camera">Take Picture</div>
+            <div class="photo-container">
+              <img src="" id="yourPhoto">
+              <p id="msg"></p>
+            </div>
+            <label for="textme">write me:</label>
+            <textarea class="app-input" id="textMe" name="textme"></textarea>
+          </div>
+          
+          <div class="app-section">
+            <h4>Wanna meet too? Share your location</h4>
+            <div class="app-button" id="currentLocation">Add Location</div>
+            <p id="geolocation"></p>
+          </div>
+          <div class="app-content">
+            <div class="app-button" id="sendBtn">Send</div>
+          </div>
+        </div>
       </div>
     </div>
 
     <script src="js/zepto.js"></script>
     <script src="js/app.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
       App.controller('home', function (page) {
         // put stuff here
@@ -145,7 +169,7 @@
       try {
         App.restore();
       } catch (err) {
-        App.load('home');
+        App.load('home', 'fade');
       }
     </script>
   </body>

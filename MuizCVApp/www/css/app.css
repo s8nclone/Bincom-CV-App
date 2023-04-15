@@ -87,3 +87,19 @@ h3 {
 .app-section {
     border-radius: .5em;
 }
+
+#textMe {
+    border: 1px outset seagreen;
+    min-width: none;
+    min-height: auto;
+}
+
+#camera,
+#currentLocation {
+    border: 1px solid var(--bg-dark-green);
+    background: var(--bg-lighter-green);
+}
+
+#sendBtn {
+    background: var(--bg-green);
+}
